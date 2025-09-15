@@ -1,4 +1,5 @@
 ﻿using Intellenum;
+using Soenneker.Quark.Enums.GlobalKeywords;
 
 namespace Soenneker.Quark.Enums.Visibilities;
 
@@ -28,21 +29,5 @@ public partial class Visibility
     /// </summary>
     public static readonly Visibility Collapse = new("collapse");
 
-    /// <summary>
-    /// The element inherits the visibility value from its parent element.
-    /// This allows the element to adopt the visibility behavior of its parent.
-    /// </summary>
-    public static readonly Visibility Inherit = new("inherit");
-
-    /// <summary>
-    /// The element resets the visibility property to its initial value, which is 'visible'.
-    /// This effectively makes the element visible and removes any inherited or set visibility behavior.
-    /// </summary>
-    public static readonly Visibility Initial = new("initial");
-
-    /// <summary>
-    /// The element resets the visibility property to its inherited value if it inherits, or to its initial value if it doesn't.
-    /// This provides a way to reset the visibility property without explicitly knowing its initial value.
-    /// </summary>
-    public static readonly Visibility Unset = new("unset");
+    public static implicit operator Visibility(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }
