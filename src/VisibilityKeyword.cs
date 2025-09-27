@@ -7,7 +7,7 @@ namespace Soenneker.Quark.Enums;
 /// This enum contains all valid CSS visibility property values for use in HTML/CSS styling.
 /// </summary>
 [Intellenum<string>]
-public partial class VisibilityKeywordKeyword
+public partial class VisibilityKeyword
 {
     /// <summary>
     /// The element is visible and displayed normally in the document flow.
