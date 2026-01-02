@@ -16,7 +16,7 @@
         <AssemblyName>Soenneker.Quark.Enums.Visibilities</AssemblyName>
         <PackageId>Soenneker.Quark.Enums.Visibilities</PackageId>
         <PackageTags>quark enums visibilities html elements blazor ui wrapper css visibility enum csharp dotnet c# .net</PackageTags>
-        <Copyright>Copyright © 2025 Jake Soenneker</Copyright>
+        <Copyright>Copyright © 2025-2026 Jake Soenneker</Copyright>
         <Authors>Jake Soenneker</Authors>
         <Company>https://soenneker.com</Company>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
