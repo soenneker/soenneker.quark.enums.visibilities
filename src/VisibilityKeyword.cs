@@ -7,6 +7,7 @@ namespace Soenneker.Quark.Enums;
 /// This enum contains all valid CSS visibility property values for use in HTML/CSS styling.
 /// </summary>
 [EnumValue<string>]
+[IncludeEnumValues(typeof(GlobalKeyword))]
 public partial class VisibilityKeyword
 {
     /// <summary>
@@ -27,6 +28,4 @@ public partial class VisibilityKeyword
     /// This is primarily used with table rows, columns, row groups, and column groups.
     /// </summary>
     public static readonly VisibilityKeyword Collapse = new("collapse");
-
-    public static implicit operator VisibilityKeyword(GlobalKeyword style) => new(style.Value); // Value is the underlying string
 }
