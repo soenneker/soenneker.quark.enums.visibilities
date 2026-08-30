@@ -3,8 +3,7 @@ using Soenneker.Gen.EnumValues;
 namespace Soenneker.Quark;
 
 /// <summary>
-/// An enumeration for Quark, representing HTML visibility CSS values.
-/// This enum contains all valid CSS visibility property values for use in HTML/CSS styling.
+/// Represents a CSS <c>visibility</c> keyword.
 /// </summary>
 [EnumValue<string>]
 [IncludeEnumValues(typeof(GlobalKeyword))]
